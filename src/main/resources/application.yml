@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: RouteService
+
+server:
+  address: 0.0.0.0
+  port: 9096
+  error:
+    include-exception: true
+    include-message: always
