@@ -14,17 +14,17 @@
     <parent>
         <groupId>com.github.klefstad-teaching</groupId>
         <artifactId>CS122B-Parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
-    <artifactId>cs122b-a6-cloud</artifactId>
-    <name>CS122B Activity 6: Cloud</name>
+    <artifactId>cs122b-a6-route</artifactId>
+    <name>CS122B Activity 6: Route</name>
 
     <dependencies>
        <dependency>
             <groupId>com.github.klefstad-teaching</groupId>
             <artifactId>CS122B-Core</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </dependency>
 
         <dependency>
