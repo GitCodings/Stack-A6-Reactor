@@ -1,5 +1,6 @@
 package com.github.klefstad_teaching.cs122b.route.sandbox;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -16,7 +17,7 @@ public class StreamsSandbox
 
     private static void mapExample()
     {
-        List<Integer> nums = List.of(1, 2, 3, 4, 5);
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
 
         nums = nums.stream()
                    .map(num -> num * 3)
@@ -27,7 +28,7 @@ public class StreamsSandbox
 
     private static void filterExample()
     {
-        List<Integer> nums = List.of(1, 2, 3, 4, 5);
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
 
         nums = nums.stream()
                    .filter(num -> num % 2 == 0)
@@ -38,7 +39,7 @@ public class StreamsSandbox
 
     private static void reduceExample()
     {
-        List<Integer> nums = List.of(1, 2, 3, 4, 5);
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
 
         Optional<Integer> sum = nums.stream()
                                     .reduce((num1, num2) -> num1 + num2);
@@ -48,7 +49,7 @@ public class StreamsSandbox
 
     private static void multipleExample()
     {
-        List<Integer> nums = List.of(1, 2, 3, 4, 5);
+        List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
 
         Optional<Integer> sum = nums.stream()
                                     .map(num -> num * 3)
