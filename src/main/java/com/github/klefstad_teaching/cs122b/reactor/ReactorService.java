@@ -1,8 +1,8 @@
-package com.github.klefstad_teaching.cs122b.route;
+package com.github.klefstad_teaching.cs122b.reactor;
 
-import com.github.klefstad_teaching.cs122b.route.sandbox.MonoSandbox;
-import com.github.klefstad_teaching.cs122b.route.sandbox.StreamsSandbox;
-import com.github.klefstad_teaching.cs122b.route.sandbox.WebClientSandbox;
+import com.github.klefstad_teaching.cs122b.reactor.sandbox.MonoSandbox;
+import com.github.klefstad_teaching.cs122b.reactor.sandbox.StreamsSandbox;
+import com.github.klefstad_teaching.cs122b.reactor.sandbox.WebClientSandbox;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.route.sandbox.models;
+package com.github.klefstad_teaching.cs122b.reactor.sandbox.models;
 
 public class Posts
 {

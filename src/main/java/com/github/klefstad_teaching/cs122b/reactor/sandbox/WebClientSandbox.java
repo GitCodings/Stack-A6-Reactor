@@ -1,7 +1,7 @@
-package com.github.klefstad_teaching.cs122b.route.sandbox;
+package com.github.klefstad_teaching.cs122b.reactor.sandbox;
 
-import com.github.klefstad_teaching.cs122b.route.sandbox.models.Posts;
-import com.github.klefstad_teaching.cs122b.route.sandbox.models.Todos;
+import com.github.klefstad_teaching.cs122b.reactor.sandbox.models.Posts;
+import com.github.klefstad_teaching.cs122b.reactor.sandbox.models.Todos;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
