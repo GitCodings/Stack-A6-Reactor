@@ -32,7 +32,7 @@ public class MonoSandbox
             Mono.just(1)
                 .subscribeOn(PARALLEL_SCHEDULER) // This allows the mono to work on another thread
                 .doOnNext(num -> simulatedLag()) // This is a "Step you can add" (Usefull for printing statements)
-                // This does not effect the value in the mono
+                                                 // This does not effect the value in the mono
                 .map(num -> num * 3);
 
         numberMono.subscribe(number -> System.out.println("This will print Second: " + number));

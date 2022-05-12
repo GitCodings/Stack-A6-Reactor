@@ -17,8 +17,8 @@
         <version>1.0.3</version>
     </parent>
 
-    <artifactId>cs122b-a6-route</artifactId>
-    <name>CS122B Activity 6: Route</name>
+    <artifactId>cs122b-a6-reactor</artifactId>
+    <name>CS122B Activity 6: Reactor</name>
 
     <dependencies>
         <dependency>
@@ -70,7 +70,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <groupId>org.springframework.boot</groupId>
                 <configuration>
-                    <mainClass>com.github.klefstad_teaching.cs122b.route.ReactorService</mainClass>
+                    <mainClass>com.github.klefstad_teaching.cs122b.reactor.ReactorService</mainClass>
                 </configuration>
             </plugin>
         </plugins>

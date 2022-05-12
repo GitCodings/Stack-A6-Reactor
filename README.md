@@ -9,7 +9,7 @@
 
 Streams are a way we can take a `iterable` object (like `List`) and apply some "work" to it. 
 
-When we create a Stream we can `map()` `filter()` `reduce()` and then finnaly `collect()` all the data.
+When we create a Stream we can `map()` `filter()` `reduce()` and then finally `collect()` all the data.
 
 ### Map
 
@@ -27,7 +27,7 @@ System.out.println(nums); // prints [3, 6, 9, 12, 15]
 
 ### Filter
 
-Using the `filter()` function we can state "which" elements of the stream we want to keep. In this example we state that we only want the elemnts of the stream that the expression `num % 2 == 0` holds true.
+Using the `filter()` function we can state "which" elements of the stream we want to keep. In this example we state that we only want the elements of the stream that the expression `num % 2 == 0` holds true.
 
 ```java 
 List<Integer> nums = List.of(1, 2, 3, 4, 5);
@@ -126,7 +126,9 @@ Mono<Todos> getMono =
     WEB_CLIENT.get()
               .uri("https://jsonplaceholder.typicode.com/todos/1")
               .retrieve()
-              .bodyToMono(Todos.class);
+              .bodyToMono(Todos.class); // This maps the response to a POJO
+                                        // Works the same way we are used to: 
+                                        // JSON to getters and setters
 
 // At this point the request has NOT been made
 // Since this is a mono we have to call subscribe or block
@@ -149,7 +151,9 @@ Posts postsBody = new Posts()
 Mono<Posts> postMono =
     WEB_CLIENT.post()
               .uri("https://jsonplaceholder.typicode.com/posts")
-              .bodyValue(postsBody)
+              .bodyValue(postsBody) // This maps the POJO to JSON
+                                    // Works the same way we are used to: 
+                                    // getters and setters to JSON
               .retrieve()
               .bodyToMono(Posts.class);
 
