@@ -116,6 +116,28 @@ String value = switchedMono.block();
 System.out.println(value);
 ```
 
+### Creating a Callable Mono
+
+```java
+// This is dangerous, we can not use Mono::just for
+// work that will "block". The purpose is to leave
+// that work for when the Mono is called (.subscribe() or .block())
+Mono<Integer> wrongWayToDoThis = Mono.just(getAValueAfterSomeLag());
+
+// This "Wraps" our function in a lambda. When you call
+// this Mono (.subscribe() or .block()) then it will call
+// that function
+Mono<Integer> correctWay = Mono.fromCallable(() -> getAValueAfterSomeLag());
+
+private static Integer getAValueAfterSomeLag()
+{
+    System.out.println("Starting with work!");
+    simulatedLag();
+    System.out.println("Done with work!");
+    return 1;
+}
+```
+
 # WebClient
 
 
