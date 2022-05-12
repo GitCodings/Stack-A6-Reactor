@@ -181,11 +181,12 @@ System.out.println(posts);
 private static Mono<Todos> getTodos(int postId)
 {
     return Mono.just(postId)
-               .flatMap(id ->
-                            WEB_CLIENT.get()
-                                      .uri("https://jsonplaceholder.typicode.com/todos/" + id)
-                                      .retrieve()
-                                      .bodyToMono(Todos.class)
+               .flatMap(
+                   id ->
+                       WEB_CLIENT.get()
+                                 .uri("https://jsonplaceholder.typicode.com/todos/" + id)
+                                 .retrieve()
+                                  .bodyToMono(Todos.class)
                );
 }
 ```
