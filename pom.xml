@@ -12,19 +12,19 @@
     </repositories>
 
     <parent>
-        <groupId>com.github.klefstad-teaching</groupId>
-        <artifactId>CS122B-Parent</artifactId>
-        <version>1.0.3</version>
+        <groupId>com.gitcodings.stack</groupId>
+        <artifactId>stack-parent</artifactId>
+        <version>1.2.0</version>
     </parent>
 
-    <artifactId>cs122b-a6-reactor</artifactId>
-    <name>CS122B Activity 6: Reactor</name>
+    <artifactId>stack-a6-reactor</artifactId>
+    <name>Stack Activity 6: Reactor</name>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.klefstad-teaching</groupId>
-            <artifactId>CS122B-Core</artifactId>
-            <version>1.0.3</version>
+            <groupId>com.gitcodings.stack</groupId>
+            <artifactId>stack-core</artifactId>
+            <version>1.2.0</version>
         </dependency>
 
         <dependency>
@@ -70,7 +70,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <groupId>org.springframework.boot</groupId>
                 <configuration>
-                    <mainClass>com.github.klefstad_teaching.cs122b.reactor.ReactorService</mainClass>
+                    <mainClass>com.gitcodings.stack.reactor.ReactorService</mainClass>
                 </configuration>
             </plugin>
         </plugins>

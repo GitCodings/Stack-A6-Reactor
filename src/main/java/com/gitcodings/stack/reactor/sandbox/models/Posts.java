@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.reactor.sandbox.models;
+package com.gitcodings.stack.reactor.sandbox.models;
 
 public class Posts
 {

@@ -1,4 +1,4 @@
-package com.github.klefstad_teaching.cs122b.reactor.sandbox;
+package com.gitcodings.stack.reactor.sandbox;
 
 import java.util.Arrays;
 import java.util.List;

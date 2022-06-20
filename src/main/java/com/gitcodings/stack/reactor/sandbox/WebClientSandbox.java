@@ -1,7 +1,7 @@
-package com.github.klefstad_teaching.cs122b.reactor.sandbox;
+package com.gitcodings.stack.reactor.sandbox;
 
-import com.github.klefstad_teaching.cs122b.reactor.sandbox.models.Posts;
-import com.github.klefstad_teaching.cs122b.reactor.sandbox.models.Todos;
+import com.gitcodings.stack.reactor.sandbox.models.Posts;
+import com.gitcodings.stack.reactor.sandbox.models.Todos;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;

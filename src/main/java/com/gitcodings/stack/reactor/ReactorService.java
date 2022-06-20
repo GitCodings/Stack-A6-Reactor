@@ -1,8 +1,8 @@
-package com.github.klefstad_teaching.cs122b.reactor;
+package com.gitcodings.stack.reactor;
 
-import com.github.klefstad_teaching.cs122b.reactor.sandbox.MonoSandbox;
-import com.github.klefstad_teaching.cs122b.reactor.sandbox.StreamsSandbox;
-import com.github.klefstad_teaching.cs122b.reactor.sandbox.WebClientSandbox;
+import com.gitcodings.stack.reactor.sandbox.MonoSandbox;
+import com.gitcodings.stack.reactor.sandbox.StreamsSandbox;
+import com.gitcodings.stack.reactor.sandbox.WebClientSandbox;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

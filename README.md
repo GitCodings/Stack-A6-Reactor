@@ -1,4 +1,4 @@
-# CS122B Activity 6 - Reactor
+# Stack Activity 6 - Reactor
 
 - [Streams](#streams)
 - [Mono](#mono)
